@@ -9,16 +9,24 @@ import UIKit
 import FirebaseAuth
 
 class RegisterViewController: UIViewController {
+      
+    @IBOutlet weak var emailTextField: UITextField!
     
+    @IBOutlet weak var passwordTextField: UITextField!
     
-    @IBOutlet weak var emailTextfield: UILabel?
-    @IBOutlet weak var passwordTextfield: UILabel?
+    @IBOutlet weak var errorMessageLabel: UILabel!
     
-    
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
+    @IBAction func registerKeyPressed(_ sender: UIButton) {
+       
+        if let email = emailTextField.text,
+           let password = passwordTextField.text {
+            Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
+                if let e = error {
+                    self.errorMessageLabel.text = e.localizedDescription
+                } else {
+                    self.performSegue(withIdentifier: K.registerSegue, sender: self)
+                }
+            }
+        }
     }
-
 }
