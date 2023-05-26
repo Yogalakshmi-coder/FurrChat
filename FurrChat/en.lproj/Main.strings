@@ -1,0 +1,15 @@
+
+/* Class = "UIViewController"; title = "Welcome View Controller"; ObjectID = "BYZ-38-t0r"; */
+"BYZ-38-t0r.title" = "Welcome View Controller";
+
+/* Class = "UIButton"; configuration.title = "Log In"; ObjectID = "QUj-rI-jkw"; */
+"QUj-rI-jkw.configuration.title" = "Log In";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "QUj-rI-jkw"; */
+"QUj-rI-jkw.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Register"; ObjectID = "iKU-8k-4YR"; */
+"iKU-8k-4YR.normalTitle" = "Register";
+
+/* Class = "UILabel"; text = "🐼FurrChat"; ObjectID = "xMY-FQ-bPk"; */
+"xMY-FQ-bPk.text" = "🐼FurrChat";
